@@ -265,18 +265,24 @@
 				// if no panda was found in that year
 				noteboard.append("text")
 					.attr("x", rectX+150)
-					.attr("y", rectY+145)
+					.attr("y", rectY+128)
 					.attr("id", "content")
 					.attr("font-size", 18)
 					.attr("opacity",1)
-					.style("fill", "#faa107")
+					.style("fill", "#ffffff")
 					.style("text-anchor", "middle")
-					.text("404 no panda")
+					.text("Oops! no panda")
 					.append("tspan")
 					.attr("x", rectX+150)
 					.attr("dy", 22)
 					.style("text-anchor", "middle")
-					.text("has been sent.");
+					.text("was sent in this year.")
+					.append("tspan")
+					.attr("x", rectX+150)
+					.attr("dy", 42)
+					.style("text-anchor", "middle")
+					.style("fill", "#faa107")
+					.text("Slide through timeline.");
 
 				var fObject = noteboard.append("foreignObject")
 					.attr("x", rectX+25)
@@ -1110,9 +1116,9 @@
 	                fObject.append("xhtml:p")
 	                .attr("class","historyEventText")
 	                .attr("xmlns","http://www.w3.org/1999/xhtml")
-	                .style("color","#FAA107")
+	                .style("color","#ffffff")
 	                .style("font-size","9px")
-	                .text("click me?");
+	                .text("Click Me!");
 
 
 	                eventGroup
